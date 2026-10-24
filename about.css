@@ -1,0 +1,112 @@
+#about-bubble{
+    display: none !important;
+}
+.menu-checkbox{
+    display: none;
+}
+.menu-toggle-btn{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    background:#e6d5c3;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(61, 44, 34, 0.1);
+    transition: background 0.3s ease;
+}
+.menu-toggle-btn:hover{
+    background: #d4c2b0;
+}
+.menu-toggle-btn span{
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #3d2c22;
+    border-radius: 2px;
+}
+.sidebar-drawer{
+    position: fixed !important;
+    top: 0;
+    right: -250px !important;
+    width: 250px;
+    height: 100%;
+    background-color: #f5ebe0;
+    box-shadow: -5px 0 20px rgba(61, 44, 34, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:80px ;
+    transition: right 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 9999;
+}
+.sidebar-drawer img{
+    mix-blend-mode: multiply !important;
+}
+#sidebar-toggle:checked ~ .sidebar-drawer{
+    right: 0;
+}
+.sidebar-drawer .bubble{
+    margin-bottom: 5px !important;
+    width: 90px !important;
+    height: 90px !important;
+    font-size: 0.85rem !important;
+    border-radius: 50%;
+    background-color: #d4c2b0;
+    color:#3d2c22;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(61, 44, 34, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.sidebar-drawer .bubble:hover{
+    transform: scale(1.05);
+    background-color: #c4b09c;
+}
+.main-content{
+    text-align: center;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.main-content h1 {
+    color: #ffffff !important;
+    font-size: 2rem;
+    margin-bottom:15px ;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.main-content p{
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.menu-checkbox{
+    display: none;
+}
+.menu-checkbox:checked ~.sidebar-drawer{
+    right: 0 !important;
+}
+a[href="index.html"].bubble{
+    display:flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+@media(max-width: 900px){
+    .main-content{
+        margin: right 20px; 
+        margin-left: 20px;
+        padding: 15px;
+        max-width: 100%;
+    }
+}

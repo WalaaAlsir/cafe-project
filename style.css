@@ -1,0 +1,100 @@
+/* اعدادات عامه والالوان فاتحة مريحة للعين */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'cairo' ,sans-serif;
+}
+body{background-color: #d89882;/*#d89882*/
+    background-image: linear-gradient(rgba(140,105,85,0.65),rgba(140,105,85,0.65)),url('bg.png');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    
+    color: #3d2c22;
+    direction: rtl;
+    text-align:right;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'cairo',sans-serif;
+}
+.coffee-logo{
+    width: 120px;
+    height: auto;
+    margin-bottom:10px ;
+    mix-blend-mode: multiply;
+}
+/* تنسيق الصفحة الرئيسية (الترحيب والفقاعات في المنتصف)*/
+.home-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+    /*لضمان عدم تمدد النص بشكل مزعج*/
+    max-width: 600px;
+    padding: 20px;
+}
+.home-container h1{
+color: #ffffff;
+font-size: 2rem;
+margin-bottom: 10px;
+text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.home-container p{
+    color: #fcf9f5;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom:30px ;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    /*جعل جملة الترحيب بجوار بعضها وليست تحت بعض */
+    max-width: 600px;
+    line-height: 1.6;
+}
+/* شبكه الفقاعات في الصفحة الرئيسية*/
+.bubble-grid{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;/* لجعل الفقاعات تنتقل بجوار بعضها */
+    justify-content: center;
+}
+/*تصميم الفقاعة*/
+.bubble{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(184, 150, 128, 0.90);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(255,255, 255, 0.10); /*ظل ناعم وبارز*/
+    transition:all 0.4s ease ;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    margin: 12px;
+
+}
+.bubble:hover{
+    /*حركه تفاعلية عند مرور الماوس */
+    transform: translate(-5px) scale(1.05);
+    background-color: rgba(165, 131, 109, 0.95);
+    color:#ffffff;
+    box-shadow: 0 12px 25px rgba(0 ,0, 0, 0.35);
+}
+#home-bubble{
+    display: flex !important;
+}
+/*تخطيط الصفحات الفرعية (تحتوي سايد بار في اليمين والمحتوى في اليسار )*/
+.page-layout{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}

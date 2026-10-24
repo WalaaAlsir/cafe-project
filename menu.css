@@ -1,0 +1,118 @@
+/*تنسيق عام للصفحة*/
+body{
+background-image: linear-gradient(rgba(140,110,90,0.7),rgba(140,110,90,0.7)),
+url(bg.png);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+font-family: 'cairo' , sans-serif;
+margin: 0;
+padding: 0;
+}
+
+/*الحاوية الرئيسية للمنيو */
+.menu-container{
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+/*عنوان القسم */
+.menu-section-title{
+    color: #ffffff !important;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-align: right;
+    border-bottom: 2px solid #ebd9cc;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*الترجمه الانجليزية بجانب العنوان*/
+.en-sub{
+    font-size: 0,9rem;
+    color: #ffffff;
+    font-weight: normal;
+}
+/*نظام الشبكه لتوزيع البطاقات*/
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 25px;
+}
+/*تصميم الكارد الكلاسيكي*/
+.card-model-1{
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e6d5c3;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(61, 44, 34,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/*تاثير التفاعل عند مرور الماوس */
+.card-model-1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(61,44,34,0.1);
+}
+/*مربع الصورة او الايقونه في الاعلى */
+.card-img-box{
+    height: 140px;
+    background: #ebd9cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+/*محتوى البطاقة (النصوص والاسعار)*/
+.card-content{
+    padding: 18px;
+    text-align: right;
+}
+/*تنسيق اسم الصنف بالعربي والانجليزي*/
+.title-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+.card-content h3{
+    color: #3d2c22;
+    margin: 0;
+    font-size: 1.15rem;
+}
+.en-title{
+    font-size: 0.8rem;
+    color: #9c8475;
+}
+/*وصف المنتج*/
+.card-content p{
+    color: #7a6b60;
+    font-size: 0.88rem;
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+}
+/*السعر بالريال القطري*/
+.card-price{
+    color: #a06b4d;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+.bubble{
+    width: 150px !important;
+    height: 150px !important;
+    background-color: rgba(184, 150, 128, 0.90  q)!important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    color: #3d2c22 !important;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(61,44,34,0.1) !important;
+    transition: all 0.4s ease;
+    border: 2px solid rgba(255, 255,255,0.4);
+    margin: 12px;
+}
+#menu-bubble{
+    display: none !important;
+}

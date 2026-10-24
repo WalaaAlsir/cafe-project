@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="auto">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <title>مقهى الأفكار - حجز الإيفنتات </title>
+            <link rel="stylesheet" href="events.css">
+            <link rel="stylesheet" href="about.css">
+            <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="sidebar-drawer">
+            <div class="sidebar-brand" style="text-align: center;margin-bottom: 25px;">
+                <img src="cup.jpg" alt="logo" style="width: 50px;margin-bottom: 8px;">
+                <h4 style="color: #3d2c22;font-size: 1.1rem; margin: 0;">مقهى الأفكار</h4>
+            </div>
+             <a href="index.html" class="bubble" >الرئيسية</a>
+                <a href="about.html" class="bubble" >عن المكان </a>
+                <a href="menu.html" class="bubble" id="menu-bubble" >المنيو</a>
+                <a href="events.html" class="bubble" id="events-bubble" style="display: none !important;">حجز الإيفنتات</a>
+                <a href="contact.html" class="bubble" id="contact-bubble">التواصل والسياسة</a>
+        </div>
+        <div class="main-content">
+            <img src="coffee-cup .png" alt="coffee-cup" class="coffee-logo">
+            <h2>حجز الفعاليات</h2>
+            <p> نظم ورشتك ، إجتماعك ، أو فعاليتك في أجواء هادئة ومحفزة للإبداع </p>
+            <p>أملأ التفاصيل وسنتواصل معك قريباً</p>
+            <div class="booking-form-container" style="margin-top: 20px; width: 100%; max-width: 400px; display: flex;flex-direction: column;gap: 12px;">
+                <input type="text" placeholder="إسمك الكريم" style="padding: 10px;border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.1); color: #fff;outline: none;">
+                <input type="date" style="padding: 10px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.4);background:rgba(255, 255, 255, 0.1);color: #fff;outline: none;">
+                <textarea placeholder="تفاصيل الفعالية ..." rows="10" style="padding: 10px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.1);color: #fff;outline: none; resize: none;"></textarea>
+                <button style="padding: 12px; border-radius: 8px; border: none; background: #3d2c22; color:#fff; font-weight: bold; cursor: pointer;">إرسال طلب الحجز</button>
+            </div>
+        </div>
+    </body>
+</html>  
